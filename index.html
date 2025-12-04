@@ -1,140 +1,280 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Mohammad Elham | Full-Stack Developer</title>
-  <meta name="description" content="MERN Stack Developer | Web & Mobile Development">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Mohammad Elham | Full-Stack MERN Developer</title>
+  <meta name="description" content="Professional Full-Stack Developer specializing in MERN Stack, React Native, and modern web applications. Available for freelance projects.">
+  <meta name="keywords" content="Full-Stack Developer, MERN Stack, React Native, Web Development, Mobile Development, Freelancer">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Prevent scrolling */
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
-    
-    /* Force content to fit */
-    .container {
-      max-height: 100vh;
-      overflow-y: auto;
-    }
-    
-    /* Hide scrollbar but keep functionality */
-    .container::-webkit-scrollbar {
-      width: 0;
-      background: transparent;
-    }
-  </style>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAXElEQVR4nGNgGAWjYBQMMwDD/zMPhnTm8SxMzP9f/////7+kH5jPxMR8loGBAQvDxLwbEwtT3H8GBgYGDAx3ZiBmYNw0IAJbJsC3gIFJzw4YAgMlCxh4FuwZkBn5/5kHhNwBAFNSJg1VwGjVAAAAAElFTkSuQmCC">
 </head>
 <body>
+  <div class="bg-animation"></div>
+  
   <div class="container">
-    <!-- Profile -->
-    <header class="profile">
-      <div class="avatar-container">
-        <!-- <img src="07.png" alt="Mohammad Elham" class="avatar"> -->
-      </div>
-      <div class="details_container">
-        <h1 class="name">Mohammad Elham</h1>
-        <p class="title">Full-Stack Developer</p>
-        <div class="tech-stack">
-          <span class="tech-tag">MongoDB</span>
-          <span class="tech-tag">Express</span>
-          <span class="tech-tag">React</span>
-          <span class="tech-tag">Node.js</span>
-          <span class="tech-tag">React Native</span>
+    <!-- Profile Section -->
+    <header class="profile-section animate__animated animate__fadeIn">
+      <div class="profile-header">
+        <div class="avatar-wrapper">
+          <div class="avatar-frame">
+            <img src="07.png" alt="Mohammad Elham" class="avatar" onerror="this.style.display='none'; document.querySelector('.avatar-placeholder').style.display='flex';">
+            <div class="avatar-placeholder">
+              <span>ME</span>
+            </div>
+          </div>
+          <div class="status-indicator"></div>
         </div>
-        <p class="bio">Specializing in MERN Stack web & mobile applications</p>
+        
+        <div class="profile-info">
+          <h1 class="name">Mohammad Elham</h1>
+          <p class="title">
+            <i class="fas fa-code"></i>
+            Full-Stack Developer
+          </p>
+          <p class="specialization">MERN Stack | React Native Expert</p>
+          
+          <div class="stats-container">
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Satisfaction</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+          </div>
+        </div>
       </div>
+      
+      <div class="tech-stack-container">
+        <h3 class="tech-stack-title">
+          <i class="fas fa-laptop-code"></i>
+          Tech Stack
+        </h3>
+        <div class="tech-stack">
+          <span class="tech-tag" data-tooltip="Database">
+            <i class="fas fa-database"></i> MongoDB
+          </span>
+          <span class="tech-tag" data-tooltip="Backend Framework">
+            <i class="fas fa-server"></i> Express.js
+          </span>
+          <span class="tech-tag" data-tooltip="Frontend Library">
+            <i class="fab fa-react"></i> React
+          </span>
+          <span class="tech-tag" data-tooltip="Runtime Environment">
+            <i class="fab fa-node-js"></i> Node.js
+          </span>
+          <span class="tech-tag" data-tooltip="Mobile Development">
+            <i class="fas fa-mobile-alt"></i> React Native
+          </span>
+          <span class="tech-tag" data-tooltip="Version Control">
+            <i class="fab fa-git-alt"></i> Git
+          </span>
+        </div>
+      </div>
+      
+      <p class="bio">
+        <i class="fas fa-quote-left"></i>
+        I specialize in building high-performance web and mobile applications using modern technologies. Passionate about clean code, scalable architecture, and exceptional user experiences.
+        <i class="fas fa-quote-right"></i>
+      </p>
     </header>
 
-    <!-- Links -->
-    <main class="links">
-      <a class="link fiverr" href="https://www.fiverr.com/elham_developer" target="_blank">
-        <i class="fas fa-briefcase"></i>
-        <div class="link-text">
-          <span class="link-name">Fiverr</span>
-          <span class="link-desc">Freelance Services</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
+    <!-- Quick Actions -->
+    <div class="quick-actions animate__animated animate__fadeInUp">
+      <a href="mailto:kohistani.taj.786@gmail.com" class="action-btn primary">
+        <i class="fas fa-paper-plane"></i>
+        <span>Hire Me</span>
       </a>
+      <a href="#contact" class="action-btn secondary">
+        <i class="fas fa-comments"></i>
+        <span>Contact</span>
+      </a>
+    </div>
 
-      <a class="link linkedin" href="https://www.linkedin.com/in/mohammad-elham-%E2%80%8Ckohistani-a121b3382" target="_blank">
-        <i class="fab fa-linkedin"></i>
-        <div class="link-text">
-          <span class="link-name">LinkedIn</span>
-          <span class="link-desc">Professional Profile</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+    <!-- Links Section -->
+    <main class="links-section animate__animated animate__fadeInUp">
+      <h2 class="section-title">
+        <i class="fas fa-link"></i>
+        Connect With Me
+      </h2>
+      <p class="section-subtitle">Choose a platform to connect or collaborate</p>
+      
+      <div class="links-grid">
+        <a class="link-card fiverr" href="https://www.fiverr.com/elham_developer" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Fiverr</h3>
+            <p class="link-desc">Freelance Services & Projects</p>
+            <span class="link-badge">Professional</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link github" href="https://github.com/Elham077" target="_blank">
-        <i class="fab fa-github"></i>
-        <div class="link-text">
-          <span class="link-name">GitHub</span>
-          <span class="link-desc">Code & Projects</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card linkedin" href="https://www.linkedin.com/in/mohammad-elham-%E2%80%8Ckohistani-a121b3382" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">LinkedIn</h3>
+            <p class="link-desc">Professional Network</p>
+            <span class="link-badge">Networking</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link instagram" href="https://www.instagram.com/mohammadelhamkohistani" target="_blank">
-        <i class="fab fa-instagram"></i>
-        <div class="link-text">
-          <span class="link-name">Instagram</span>
-          <span class="link-desc">Personal Updates</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card github" href="https://github.com/Elham077" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">GitHub</h3>
+            <p class="link-desc">Code Repository & Projects</p>
+            <span class="link-badge">Open Source</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link facebook" href="https://www.facebook.com/MohammadElhamkohistani" target="_blank">
-        <i class="fab fa-facebook"></i>
-        <div class="link-text">
-          <span class="link-name">Facebook</span>
-          <span class="link-desc">Connect</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card instagram" href="https://www.instagram.com/mohammadelhamkohistani" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Instagram</h3>
+            <p class="link-desc">Personal Updates & Behind Scenes</p>
+            <span class="link-badge">Personal</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link twitter" href="https://x.com/technologies_0?t=b0Ww0pW4pE492539bFPbfQ&s=09" target="_blank">
-        <i class="fab fa-twitter"></i>
-        <div class="link-text">
-          <span class="link-name">Twitter (X)</span>
-          <span class="link-desc">Quick Updates</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card facebook" href="https://www.facebook.com/MohammadElhamkohistani" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Facebook</h3>
+            <p class="link-desc">Connect & Follow</p>
+            <span class="link-badge">Social</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link telegram" href="https://t.me/elhamJsdev" target="_blank">
-        <i class="fab fa-telegram"></i>
-        <div class="link-text">
-          <span class="link-name">Telegram</span>
-          <span class="link-desc">Direct Contact</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card twitter" href="https://x.com/technologies_0?t=b0Ww0pW4pE492539bFPbfQ&s=09" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Twitter (X)</h3>
+            <p class="link-desc">Tech Updates & Thoughts</p>
+            <span class="link-badge">Tech News</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
 
-      <a class="link email" href="mailto:kohistani.taj.786@gmail.com">
-        <i class="fas fa-envelope"></i>
-        <div class="link-text">
-          <span class="link-name">Email</span>
-          <span class="link-desc">Business Inquiries</span>
-        </div>
-        <i class="fas fa-arrow-right"></i>
-      </a>
+        <a class="link-card telegram" href="https://t.me/elhamJsdev" target="_blank" rel="noopener noreferrer">
+          <div class="link-icon">
+            <i class="fab fa-telegram"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Telegram</h3>
+            <p class="link-desc">Direct Messages & Support</p>
+            <span class="link-badge">Quick Chat</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
+
+        <a class="link-card email" href="mailto:kohistani.taj.786@gmail.com" id="contact">
+          <div class="link-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="link-content">
+            <h3 class="link-name">Email</h3>
+            <p class="link-desc">Business Inquiries & Proposals</p>
+            <span class="link-badge">Professional</span>
+          </div>
+          <div class="link-arrow">
+            <i class="fas fa-external-link-alt"></i>
+          </div>
+          <div class="link-hover-effect"></div>
+        </a>
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <p class="copyright">
-        <i class="far fa-copyright"></i>
-        <span id="currentYear"></span> Mohammad Elham
-      </p>
-      <p class="available">Available for projects</p>
+    <footer class="footer-section animate__animated animate__fadeIn">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="available-status">
+            <div class="status-dot"></div>
+            <span class="status-text">Available for projects</span>
+          </div>
+          <p class="footer-quote">Let's build something amazing together!</p>
+        </div>
+        
+        <div class="footer-copyright">
+          <p class="copyright">
+            <i class="far fa-copyright"></i>
+            <span id="currentYear"></span> Mohammad Elham
+          </p>
+          <p class="copyright-sub">Full-Stack Developer | MERN Stack Expert</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#privacy" class="footer-link">Privacy</a>
+          <span class="separator">•</span>
+          <a href="#terms" class="footer-link">Terms</a>
+          <span class="separator">•</span>
+          <a href="#sitemap" class="footer-link">Sitemap</a>
+        </div>
+      </div>
     </footer>
   </div>
+
+  <!-- Floating Elements -->
+  <div class="floating-elements">
+    <div class="floating-element element-1"><i class="fab fa-react"></i></div>
+    <div class="floating-element element-2"><i class="fab fa-js"></i></div>
+    <div class="floating-element element-3"><i class="fab fa-node"></i></div>
+    <div class="floating-element element-4"><i class="fas fa-code"></i></div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
